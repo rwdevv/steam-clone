@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    display: flex;
+    height: 100%;
+    background: #2a2e3b;
+}
+
+
+
+
+
+
+aside{
+    display: fixed;
+    min-width: 260px;
+    max-width: 600px;
+    width: 290px;
+    height: 100vh;
+    border-right: 2px solid #111;
+}
+
+.colection-menu{
+    display: flex;
+    background: #20222b;
+    padding: 8px 5px;
+}
+.colection-menu button{
+    border: none;
+    background: #3b3f49;
+    background-image: url(../images/steam-logo-gray.png);
+    background-repeat: no-repeat;
+    background-size: 120px;
+    background-position: 100px -45px;
+    width: calc(100% - 40px);
+    border-radius: 4px;
+    margin-right: 5px;
+}
+.colection-menu h2{
+    color: #fff;
+    text-align: left;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 12pt;
+    padding: 8px;
+}
+.colection-menu h2.active,
+.colection-menu h2:hover{
+    background: linear-gradient(90deg, rgb(46, 49, 56),#494d58df);
+}
+.colection-menu .colections{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 4px 0;
+    width: 35px;
+    min-height: fit-content;
+    border-radius: 4px;
+    background: #272931;
+    cursor: pointer;
+    transition: 100ms;
+}
+.colections:hover{
+    background: #34363f;
+}
+.colections .block{
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    background: #666;
+    transition: 150ms;
+}
+.colections:hover .block{
+    background: #eee;
+}
+
+
+
+.menu-line{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.menu-line img{
+    width: 14px;
+    height: 14px;
+    filter: invert(0.4);
+    margin: 0 8px;
+    cursor: pointer;
+}
+.menu-line img.active{
+    filter: invert(37%) sepia(18%) saturate(2734%) hue-rotate(171deg) brightness(94%) contrast(74%) !important;
+}
+.menu-line img:hover{
+    filter: brightness(104%) !important;
+}
+
+
+.placeholder{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #212128; 
+    border-radius: 6px;
+    width: 100%;
+    margin: 5px;
+    transition: 100ms;
+    cursor: pointer;
+}
+.placeholder h2{
+    color: #aaa;
+    text-transform: uppercase;
+    margin: 6px 10px;
+    font-weight: 400;
+    font-size: 11pt;
+}
+.placeholder:hover{
+    background: #34363f; 
+}
+.placeholder:hover:hover h2{
+    color: #fff;
+}
+.placeholder img{
+    width: 11px;
+    filter: invert(.1);
+}
+.placeholder img.inside{
+    position: absolute;
+    filter: invert(.5);
+    width: 15px;
+    height: 15px;
+}
+
+
+
+
+.menu-line .search{
+    position: relative;
+    display: none;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.menu-line .search.active{
+    display: flex;
+}
+
+.search h3{
+    color: #ddd;
+    width: 100%;
+    margin: 5px 10px 5px 25px;
+}
+.search img.close{
+    position: absolute;
+    margin: auto;
+    right: 10px;
+    top: 11px;
+    transform: scale(0.8);
+    filter: invert(.1);
+}
+.search h4{
+    position: relative;
+    padding: 4px 10px;
+    font-size: 10pt;
+    white-space: nowrap;
+    color: #eee;
+    font-weight: 400;
+    margin: 3px;
+    padding-right: 20px;
+    background: radial-gradient(#4287e2, #2f69b6);
+    border-radius: 4px;
+}
+.search h4 img{
+    position: absolute;
+    transform: scale(0.5);
+    filter: invert(.4);
+    margin: auto;
+    right: 5px;
+    top: 6px;
+}
+.search .tag{
+    display: none;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+    margin-top: 3px;
+    max-width: 90%;
+}
+.search .tag.active{
+    display: flex;
+}
+
+.search .placeholder{
+    cursor: text;
+    margin-top: 0;
+}
+.search .placeholder:hover{
+    background: #212128;
+}
+.placeholder input[type="search"]{
+    font-size: 14pt;
+    background: transparent;
+    color: #ddd;
+    padding-left: 30px;
+    width: 100%;
+    height: 25px;
+    margin: 5px;
+    border: none;
+}
+.placeholder input[type="search"]:focus{
+    box-shadow: inset 0 0 5px #000;
+    outline: none;
+}
+.placeholder input[type="search"]::placeholder{
+    color: #555;
+    font-size: 13pt;
+    font-style: italic;
+    opacity: 0;
+    transition: 250ms;
+}
+.placeholder:hover input[type="search"]::placeholder{
+    opacity: 1;
+}
+.placeholder input[type="search"]::-webkit-search-cancel-button{
+    cursor: pointer;
+}
+
+
+.placeholder .options{
+    background: radial-gradient(#41434b, #34363f);
+    position: absolute;
+    display: none;
+    box-shadow: 0 0 20px #000a;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    opacity: 1;
+    transition: 50ms;
+    z-index: 5;
+}
+.placeholder .options.active{
+    display: block;
+}
+
+.menu-line .filter-button{
+    position: relative;
+    background: #212128;
+    filter: invert(0);
+    border-radius: 4px;
+    border: none;
+    margin: 2px 5px;
+    padding: 5px;
+    min-width: 32px;
+    height: 32px;
+    cursor: pointer;
+    outline: none;
+}
+.filter-button img{
+    position: relative;
+    width: 22px;
+    height: 22px;
+    margin: auto;
+}
+.filter-button:hover{
+    background: #34363f;
+}
+.filter-button:hover img{
+    filter: invert(0);
+}
+.filter-button.active{
+    background: #34363f;
+}
+
+
+
+.options .option{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 8px;
+    z-index: 5;
+}
+.options .option label{
+    color: #aaa;
+    font-weight: 400;
+    margin-left: 8px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.option label span{
+    margin-left: 8px;
+    color: #777;
+}
+.options hr{
+    margin: 8px;
+    margin-bottom: -4px;
+    border-bottom: 1px;
+}
+
+.option input {
+    top: 0;
+    left: 0;
+    height: 14px;
+    width: 14px;
+    
+    filter: invert(.85) hue-rotate(180deg);
+}
+
+
+
+
+
+.menu-full{
+
+    height: calc(100% - 136px);
+    margin-top: 5px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.category header{
+    display: flex;
+    background: linear-gradient(90deg, #2c3342 30%, transparent);
+    white-space: nowrap;
+    padding: 5px;
+    margin: 2px 0;
+    cursor: pointer;
+}
+.category header:hover{
+    background: #8fbadd34;
+}
+.category header h2{
+    color: #c0daefaa;
+    width: 100%;
+    font-size: 12pt;
+    text-transform: uppercase;
+}
+.category header h2:hover{
+    color: #eee;
+}
+.category img{
+    width: 12px;
+    margin-right: 5px;
+    filter: invert(28%) sepia(9%) saturate(836%) hue-rotate(176deg) brightness(98%) contrast(91%);
+}
+.category img:hover{
+    filter: invert(.1);
+}
+.category header h2 span{
+    margin-left: 5px;
+    font-weight: 400;
+    color: #c0daef33;
+}
+
+
+
+.game{
+    display: flex;
+    padding: 0 5px;
+    white-space: nowrap;
+    padding: 2px 0;
+    cursor: pointer;
+}
+.game:hover{
+    background: #8fbadd44;
+}
+.game img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    margin-left: 15px;
+}
+.game h3{
+    color: #eee;
+    font-weight: 400;
+    font-size: 11pt;
+}
+
+
+
+iframe{
+    width: 100%;
+    min-height: 100%;
+}

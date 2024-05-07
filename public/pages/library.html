@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam library</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/library-style.css">
+    <link rel="stylesheet" href="../css/scroll.css">
+</head>
+<body>
+    <aside class="back-degrade">
+        <header class="colection-menu">
+            <button><h2 class="active">Página Inicial</h2></button>
+            <div class="colections">
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+            </div>
+        </header>
+        <div class="menu-line">
+
+            <div class="placeholder" onclick="toogleOptions(this)">
+                <h2 id="cats-selected">Jogos e Softwares</h2> 
+                <img src="../images/icons/down.svg">
+                <div class="options">
+                            <div class="option">
+                                <input id="cat0" type="checkbox" class="cat-show" checked="true">
+                                <label for="cat0">Jogos<span>(88)</span></label>
+                            </div>
+                            <div class="option">
+                                <input id="cat1" type="checkbox" class="cat-show" checked="true">
+                                <label for="cat1">Softwares<span>(8)</span></label>
+                            </div>
+                            <div class="option">
+                                <input id="cat2" type="checkbox" class="cat-show">
+                                <label for="cat2">Ferramentas<span>(112)</span></label>
+                            </div>
+                            <hr>
+                            <div class="option">
+                                <input id="cat-col" type="checkbox" class="cat-show" checked="true">
+                                <label for="cat-col">Agrupar por coleção </label>
+                            </div>
+                </div>
+            </div>
+            <img src="../images/icons/clock.svg">
+            <img src="../images/icons/play-button.svg" class="active">
+            
+        </div>
+        <div class="menu-line top-align">
+
+            <div class="search active">
+                <div class="placeholder">
+                    <img src="../images/icons/loupe.svg" class="inside">
+                    <input type="search" name="" id="" placeholder="Buscar por nome">
+                </div>
+            </div>
+            <div class="search ">
+
+                <img src="../images/icons/close.svg" class="close">
+                <div class="tag ">
+                    <h4>Um jogador <img src="../images/icons/close.svg"></h4>
+                    <h4>Multijogador<img src="../images/icons/close.svg"></h4>
+                    <h4>Cooperativo<img src="../images/icons/close.svg"></h4>
+                    <h4>Controles (total)<img src="../images/icons/close.svg"></h4>
+                    <h4>Um jogador <img src="../images/icons/close.svg"></h4>
+                    <h4>Um jogador <img src="../images/icons/close.svg"></h4>
+                </div>
+            </div>
+            <button class="filter-button">
+                <img src="../images/icons/levels.svg">
+            </button>
+        </div>
+
+        <div class="menu-full">
+            <div class="category">
+                <header>
+                    <img src="../images/icons/bar.svg">
+                    <h2>Softwares<span>(2)</span></h2>
+                </header>
+            </div>
+            <div class="game">
+                <img src="../images/50-unpic.png">
+                <h3>Wallpaper Engine</h3>
+            </div>
+
+            <div class="category">
+                <header>
+                    <img src="../images/icons/bar.svg">
+                    <h2>Sem Categoria<span>(4/92)</span></h2>
+                </header>
+            </div>
+            <div class="game">
+                <img src="../images/50-unpic.png">
+                <h3>Resident Evil 4</h3>
+            </div>
+            <div class="game">
+                <img src="../images/50-unpic.png">
+                <h3>Grand Theft Auto V</h3>
+            </div>
+            <div class="game">
+                <img src="../images/50-unpic.png">
+                <h3>Life is Strange</h3>
+            </div>
+            <div class="game">
+                <img src="../images/50-unpic.png">
+                <h3>Tom Clancy's Rainbow Six Siege </h3>
+            </div>
+        </div>
+    </aside>
+
+    <iframe src="./library-start.html" frameborder="0"></iframe>
+    <script src="../js/buttons.js"></script>
+</body>
+</html>
