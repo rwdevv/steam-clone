@@ -1,28 +1,27 @@
 # Steam APP Clone
  
- Este projeto é apenas para fins de aprendizado realizado sem ajuda de cursos/tutoriais.
- Como estou tentando utilizar imagens livres de direitos autorais, apenas por costume, então o clone não tem como ser perfeito, porém é sim possivel confundir-se pois estes pequenos detalhes só são percebidos quando colocado o original e o clone lado a lado.
+ This project is only for learning purposes carried out without the help of courses/tutorials.
+ As I am trying to use copyright-free images, just out of habit, the clone cannot be perfect, but it is possible to get confused as these small details are only noticed when the original and the clone are placed side by side.
 
  
-### Tecnologias utilizadas:
-* HTML5 
-* CSS3 
-* JavaScript 
+### Technologies used:
+* HTML5
+*CSS3
+* JavaScript
 
-Vale lembrar que este é apenas um clone do aplicativo desktop da <a href="https://store.steampowered.com/about/">STEAM</a>.
+It's worth remembering that this is just a clone of the <a href="https://store.steampowered.com/about/">STEAM</a> desktop application.
 
 ---
-## Agradecimentos:
-* Primeiramente, a Steam!
-* <a href="https://codepen.io/sosuke/pen/Pjoqqp" title="Color inverter">Pjoqqp - Cor Em Filtro</a>
+## Thanks:
+* Firstly, Steam!
+* <a href="https://codepen.io/sosuke/pen/Pjoqqp" title="Color invert">Pjoqqp - Color In Filter</a>
 
-#### Icones disponibilizados por:
+#### Icons provided by:
 * <a href="https://www.flaticon.com/authors/google" title="Google">Google</a>
 * <a href="https://www.flaticon.com/br/autores/pixel-perfect" title="Pixel perfect">Pixel perfect</a>
-* <a href="https://www.flaticon.com/br/autores/freepik" title="Freepik">Freepik</a> 
+* <a href="https://www.flaticon.com/br/autores/freepik" title="Freepik">Freepik</a>
 * <a href="https://www.flaticon.com/br/autores/iconixar" title="iconixar">iconixar</a>
 * <a href="https://www.flaticon.com/br/autores/dave-gandy" title="Dave Gandy">Dave Gandy</a>
 * <a href="https://www.flaticon.com/br/autores/catalin-fertu" title="Catalin Fertu">Catalin Fertu</a>
-* <a href="https://www.flaticon.com/authors/dmitri13" title="dmitri13">dmitri13</a> 
+* <a href="https://www.flaticon.com/authors/dmitri13" title="dmitri13">dmitri13</a>
 * <a href="https://www.flaticon.com/authors/becris" title="Becris">Becris</a>
-
