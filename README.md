@@ -2,19 +2,14 @@
  
  Este projeto é apenas para fins de aprendizado realizado sem ajuda de cursos/tutoriais.
  Como estou tentando utilizar imagens livres de direitos autorais, apenas por costume, então o clone não tem como ser perfeito, porém é sim possivel confundir-se pois estes pequenos detalhes só são percebidos quando colocado o original e o clone lado a lado.
- 
 
+ 
 ### Tecnologias utilizadas:
 * HTML5 
 * CSS3 
 * JavaScript 
 
-Lembre-se que este é um clone do aplicativo desktop da <a href="https://store.steampowered.com/about/">STEAM</a> (valve.inc), portanto não há nenhuma funcionalidade além da navegação e __TODO__ o seu conteúdo e informações devem ser considerados apenas um exemplo.
-
-
-### Restantes:
-Cláro, não irei declarar o trabalho realizado a cada dia aqui, pois ficaria muito longo, e este não é o foco de um read.me então é isso, mostrei os avanços que tive nos tres primeiros dias e agora você tem uma noção da evolução no projeto.
-Note também que por ser um aplicativo, assumo que as imagens já estarão em posse do cliente, então muitas delas não foi adicionado um texto alternativo!
+Vale lembrar que este é apenas um clone do aplicativo desktop da <a href="https://store.steampowered.com/about/">STEAM</a>.
 
 ---
 ## Agradecimentos:
